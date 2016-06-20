@@ -1,0 +1,9 @@
+clean: true
+objc: true
+umbrella_header: JazzyTest/JazzyTest.h
+framework_root: .
+framework_root: .
+module: Jazzy
+
+sdk: iphonesimulator
+swift_version: 2.2

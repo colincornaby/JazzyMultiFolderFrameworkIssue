@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A21A2E4E1D18718200E28B41 /* JazzyTest.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A2E4D1D18718200E28B41 /* JazzyTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21A2E591D18728600E28B41 /* ModuleA.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A2E571D18724000E28B41 /* ModuleA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21A2E5A1D18728800E28B41 /* ModuleB.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A2E581D18725D00E28B41 /* ModuleB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A21A2E4A1D18718200E28B41 /* JazzyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JazzyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21A2E4D1D18718200E28B41 /* JazzyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JazzyTest.h; sourceTree = "<group>"; };
 		A21A2E4F1D18718200E28B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21A2E571D18724000E28B41 /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModuleA.h; path = ModuleA/ModuleA.h; sourceTree = "<group>"; };
+		A21A2E581D18725D00E28B41 /* ModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModuleB.h; path = ModuleB/ModuleB.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXGroup;
 			children = (
 				A21A2E4C1D18718200E28B41 /* JazzyTest */,
+				A21A2E551D18720F00E28B41 /* ModuleA */,
+				A21A2E561D18721400E28B41 /* ModuleB */,
 				A21A2E4B1D18718200E28B41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +58,22 @@
 			path = JazzyTest;
 			sourceTree = "<group>";
 		};
+		A21A2E551D18720F00E28B41 /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				A21A2E571D18724000E28B41 /* ModuleA.h */,
+			);
+			name = ModuleA;
+			sourceTree = "<group>";
+		};
+		A21A2E561D18721400E28B41 /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				A21A2E581D18725D00E28B41 /* ModuleB.h */,
+			);
+			name = ModuleB;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -60,6 +82,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21A2E4E1D18718200E28B41 /* JazzyTest.h in Headers */,
+				A21A2E591D18728600E28B41 /* ModuleA.h in Headers */,
+				A21A2E5A1D18728800E28B41 /* ModuleB.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +258,7 @@
 		A21A2E531D18718200E28B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -250,6 +275,7 @@
 		A21A2E541D18718200E28B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
